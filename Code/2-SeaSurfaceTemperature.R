@@ -53,9 +53,13 @@ negSST <- negSST[negSST$NegativeSST > 0, ]
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  EXPORT DATA
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Change names for uniformity
+PositiveSST <- posSST
+NegativeSST <- negSST
+
 # Export object as .RData
-save(posSST, file = './Data/Driver/PositiveSST.RData')
-save(negSST, file = './Data/Driver/NegativeSST.RData')
+save(PositiveSST, file = './Data/Driver/PositiveSST.RData')
+save(NegativeSST, file = './Data/Driver/NegativeSST.RData')
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
